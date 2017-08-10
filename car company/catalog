@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Catalog  </h1> 
+ <head>
+ <meta charset="utf-8">
+ <meta name="description" content="welcome to Cars Rent company inc">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <link rel="shourcut icon" type="image/x-icon" href="img/car.ico">
+<link rel="stylesheet" href="Styles/miestilo.css">
+
+}
+</style>
+  </head>
+
+  <body>
