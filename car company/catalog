@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1> Catalog  </h1> 
  <head>
  <meta charset="utf-8">
  <meta name="description" content="welcome to Cars Rent company inc">
@@ -12,8 +10,56 @@
  <link rel="shourcut icon" type="image/x-icon" href="img/car.ico">
 <link rel="stylesheet" href="Styles/miestilo.css">
 
-}
-</style>
-  </head>
+ 	<title> Catalog</title>
+ 	
 
-  <body>
+</head>
+ <body>
+      <li><a href="car Rent company.html">Página principal</a>
+        <li><a href="Catalog.html">catalog</a>
+        <li><a href="details.html">details</a>
+        <li><a href="About.html">About</a>
+    </ul>
+ </body>
+ </html> 
+<body>
+
+<p> Social Media </p> 
+
+<aside>
+	<a href="https://www.facebook.com/">Go to Facebook</a>	
+	<a href="https://www.instagram.com/">Go to instagram</a>
+
+</aside>
+
+ 
+<img src="img/facebook.png" all="facebook" style="width:40px;height:40px;">
+<img src="img/instagram.jpg" all="instagram" style="width:50px;height:50px;">
+
+
+
+ </td>
+        </tr>
+      </table>
+  </tr>
+  <hr>
+	<footer>
+		
+		
+	</footer>
+	</nav>
+	<details>
+  <summary>Copyright 2015-2017.</summary>
+  <p> -  All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company.</p>
+</details> 
+<address>
+	create by JB aug 2017<br>
+</address>
+
+</body>
+</html> 
+
+
+</style>
+  
