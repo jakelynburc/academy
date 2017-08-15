@@ -50,6 +50,10 @@ namespace MyProductsAdminsite.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Description,Model,Price,Keywords,CategoryId,Active")] Product product)
         {
+            product.createDateTime = DateTime.Now;
+
+
+
             if (ModelState.IsValid)
             {
                 db.Products.Add(product);

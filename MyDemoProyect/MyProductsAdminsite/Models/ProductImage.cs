@@ -19,6 +19,8 @@ namespace MyProductsAdminsite.Models
         public string ImagURL { get; set; }
         public Nullable<int> ProductId { get; set; }
         public Nullable<bool> Active { get; set; }
+        public Nullable<System.DateTime> createDateTime { get; set; }
+        public Nullable<System.DateTime> updatedatetime { get; set; }
     
         public virtual Product Product { get; set; }
     }

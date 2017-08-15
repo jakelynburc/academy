@@ -94,12 +94,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="catalog.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Details2.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\aveo.jpg" />
+    <Content Include="img\Chevrolet S10.jpg" />
+    <Content Include="img\cruze.jpg" />
+    <Content Include="img\HYUNDAI.jpg" />
+    <Content Include="img\KIA.jpg" />
+    <Content Include="img\TORNADO.jpg" />
+    <Content Include="MyDemoProyect public webside.user" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="catalog" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,22 +145,18 @@
     <Content Include="bin\Microsoft.ApplicationInsights.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="car company4.html" />
+    <Content Include="Index.html" />
     <Content Include="contact.html" />
     <Content Include="Details.html" />
-    <Content Include="img\camionetas.jpg" />
     <Content Include="img\car.ico.png" />
-    <Content Include="img\compac.jpg" />
-    <Content Include="img\corolla.jpg" />
     <Content Include="img\facebook.png" />
-    <Content Include="img\ford.jpg" />
     <Content Include="img\instagram.jpg" />
-    <Content Include="img\Solo-Carros.jpg" />
-    <Content Include="img\Tacoma.png" />
-    <Content Include="img\toyota.jpg" />
     <Content Include="img\yellow-cars.jpg" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\catalog.js" />
+    <Content Include="scripts\CatalogData.js" />
+    <Content Include="scripts\Details.js" />
     <Content Include="Styles\miestilo.css" />
     <Content Include="UserReport.html" />
     <Content Include="Web.config" />
@@ -146,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="fonts\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
