@@ -14,6 +14,9 @@ namespace Myproduct.webApi
     {
         public static void Register(HttpConfiguration config) 
         {
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
             // Web API configuration and services
             config.EnableCors();
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));

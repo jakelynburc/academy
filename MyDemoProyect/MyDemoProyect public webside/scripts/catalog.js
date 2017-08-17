@@ -27,7 +27,7 @@ function GetAllProducts() {
             var html = "";
                 $.each(data, function (element, object) {
                     html += "<div class='Catalog ProducItem'>";
-                    html += "<div><a href='details.html?id=" + object.Id + "'>" + object.Description + "</a></div>";
+                    html += "<div><a href='details2.html?id=" + object.Id + "'>" + object.Description + "</a></div>";
                     html += "<div><img class='Catalog' src='" + object.imgUrl + "' /></div>";
                     html += "<div>" + object.Price + "</div></div>";
                 });

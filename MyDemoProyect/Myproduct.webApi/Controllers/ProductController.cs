@@ -19,11 +19,22 @@ namespace Myproduct.webApi.Controllers
         private MyCompanyEntities db = new MyCompanyEntities();
         // GET: Product
         
-        public IEnumerable<Product> Get()
+        public IEnumerable<Object> Get()
         {
 
-            var product = db.Products.AsEnumerable();
-            return product.ToList();
+            //var product = db.Products.AsEnumerable();
+            //return product.ToList();
+
+            var myObjects = (from prod in db.Products
+                            join img in db.ProductImages on prod.Id equals img.ProductId
+                            select new
+                            {
+                                prod.Model,
+                                prod.Price,
+                                prod.Description,
+                                img.ImagURL
+                            }).ToList();
+            return myObjects;
         }
         #region other methods
         // GET: api/Product/5
