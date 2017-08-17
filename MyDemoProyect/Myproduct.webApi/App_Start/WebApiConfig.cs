@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Http.Cors;
-
+using System.Net.Http.Headers;
 
 namespace Myproduct.webApi
 {
@@ -16,6 +16,7 @@ namespace Myproduct.webApi
         {
             // Web API configuration and services
             config.EnableCors();
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             // Web API routes
             config.MapHttpAttributeRoutes();
 

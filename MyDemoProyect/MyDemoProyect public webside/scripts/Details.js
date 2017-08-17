@@ -24,20 +24,27 @@ function buildMyProduct(myProduct) {
     html += "<div class='Catalog ProducItem'>";
     html += "<div>" + myProduct.title + "</a></div>";
     html += "<div><img class='Catalog' src='" + myProduct.imgUrl + "' /></div>";
-    html += "<div>" + myProduct.description + "</div></div>";
+    html += "<div>" + myProduct.description + "</div>";
+    html += "<div>" + product.model + "</div>";
+    html += "<div>" + product.price + "</div>";
+    $.each(product.ProductImages, function (element, image) {
+        html += "<div id='ImageContainer'>Images:<ul>";
+        html += "<li><img class='Thumb' src='" + image.imgUrl + "' /></li></ul>";
 
-    $("#MyDynamicProductDetail").append(html);
-}
+        $("#MyDynamicProductDetail").append(html);
+    }
+    );
 
-function getJsonFromUrl() {
-    var query = location.search.substr(1);
-    var result = {};
-    query.split("&").forEach(function (part) {
-        var item = part.split("=");
+    function getJsonFromUrl() {
+        var query = location.search.substr(1);
+        var result = {};
+        query.split("&").forEach(function (part) {
+            var item = part.split("=");
 
-        //Decode to avoid errors due to blank spaces on the URL
-        result[item[0]] = decodeURIComponent(item[1]);
-    });
-    //we need only the ID
-    return result.id;
+            //Decode to avoid errors due to blank spaces on the URL
+            result[item[0]] = decodeURIComponent(item[1]);
+        });
+        //we need only the ID
+        return result.id;
+    }
 }

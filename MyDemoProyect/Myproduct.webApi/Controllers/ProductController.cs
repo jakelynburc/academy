@@ -10,8 +10,10 @@ using System.Web.Http.Cors;
 
 namespace Myproduct.webApi.Controllers
 {
-    [EnableCors(origins: "http://localhost:58418", headers: " * ", methods: " * ")]
-    public class ProductController : Controller
+    //Puerto 51184 es de WebAPI
+    //Puerto 54105 es de WebApp
+    [EnableCors(origins: "http://localhost:54105", headers: " * ", methods: " * ")]
+    public class ProductController : ApiController
     {
   
         private MyCompanyEntities db = new MyCompanyEntities();
