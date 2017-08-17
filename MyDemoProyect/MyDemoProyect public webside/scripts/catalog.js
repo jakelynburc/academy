@@ -16,3 +16,17 @@ function buildMyProduct(obj) {
     });
     return html;
 }
+//function GetAllProducts() {
+//    $.ajax({
+//        type: 'GET',
+//        url: 'http://localhost:3795/api/product',
+//        contentType: "application/json; charset=utf-8",
+//        dataType: "json",
+//        success: function (data) {
+
+//        },
+//        error: function (a, b, c) {
+
+//        }
+//    });
+//}

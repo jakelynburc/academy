@@ -10,17 +10,42 @@ using System.Web.Http.Cors;
 
 namespace Myproduct.webApi.Controllers
 {
+    [EnableCors(origins: "http://localhost:58418", headers: " * ", methods: " * ")]
     public class ProductController : Controller
     {
-
+  
         private MyCompanyEntities db = new MyCompanyEntities();
         // GET: Product
-        [EnableCors(origins: "http://localhost:58418", headers: " * ", methods: " * ")]
+        
         public IEnumerable<Product> Get()
         {
 
             var product = db.Products.AsEnumerable();
             return product.ToList();
         }
+        #region other methods
+        // GET: api/Product/5
+        public string Get(int id)
+        {
+            var product = db.Products.Where(x => x.Id == id).FirstOrDefault();
+            return product.ToString();
+        }
+
+        // POST: api/Product
+        public void Post([FromBody]string value)
+        {
+        }
+
+        // PUT: api/Product/5
+        public void Put(int id, [FromBody]string value)
+        {
+        }
+
+        // DELETE: api/Product/5
+        public void Delete(int id)
+        {
+        }
     }
+    #endregion
 }
+
